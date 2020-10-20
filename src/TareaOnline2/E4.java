@@ -8,8 +8,12 @@ package TareaOnline2;
 import java.util.Scanner;
 
 /**
- *
- * @author migue
+ * Esta clase resuelve el siguiente ejercicio:
+ * Ejercicio 4: Comprueba si un número introducido por teclado es positivo. 
+ * En caso afirmativo muestra el mensaje “El número introducido es positivo”.
+ * 
+ * @author Maria Bellido Rueda
+ * @version 1.0
  */
 public class E4 {
 
@@ -19,20 +23,24 @@ public class E4 {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        int numero ;
-        
+    //Clase Scanner para recoger datos de entrada por teclado    
         Scanner teclado = new Scanner (System.in) ;
 
-        System.out.println("Introduzca un número para comprobar si es positivo") ;
+    //Declaración de variables        
+        int numero ;
         
-        numero = teclado.nextInt();
+    //Salida en consola
+        System.out.println("Introduzca un número para comprobar si es positivo. Recuerda que el 0 no tiene signo.") ;        
+            numero = teclado.nextInt(); //Recogida y almacenaje datos variable numero
+            
+    //Estructura condicional if
         
-        if ( numero >= 0 ) {
-            System.out.println("El número introducido es positivo");
+        if ( numero > 0 ) { //Si el número introducido es mayor a 0
+            System.out.println("El número introducido es positivo"); //Salida
         }
         
-        else {
-            System.out.println ("No es positivo") ;
+        else { //Si no es mayor a 0
+            System.out.println ("No es positivo") ; //Salida
         }
            
     }
