@@ -8,8 +8,11 @@ package TareaOnline2;
 import java.util.Scanner;
 
 /**
- *
- * @author migue
+ * Esta clase resuelve el siguiente ejercicio:
+ * Ejercicio 3: Muestre los primeros 100 números negativos.
+ * 
+ * @author Maria Bellido Rueda
+ * @version 1.0
  */
 public class E3 {
 
@@ -19,20 +22,11 @@ public class E3 {
     public static void main(String[] args) {
         // TODO code application logic here
                 
-        int numero , contador ;
-        
-        Scanner teclado = new Scanner (System.in) ;
-        
-        System.out.println("Introduzca un número para mostrar los negativos");
-        
-        numero = teclado.nextInt();
-        
-        numero = -(numero) ;
-        
-        for (contador = 1 ; contador <= 100 ; contador --) {
-            System.out.println(contador);
+      
+    //Esctura de bucle for.         
+        for (int i = -1 ; i >= -100 ; i--) { //Inicio la iteración en -1, hasta que llegue a -100, decrementando en 1.
+            System.out.println(i); //Salida de datos
         }
-
     }
     
 }
