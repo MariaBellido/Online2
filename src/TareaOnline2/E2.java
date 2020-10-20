@@ -8,8 +8,10 @@ package TareaOnline2;
 import java.util.Scanner;
 
 /**
- *
- * @author migue
+ * Esta clase resuelve el siguiente ejercicio:
+ * Ejercicio 2: Pida dos números por teclado. Ha de mostrar la suma, resta, multiplicación y división de ambos números.
+ * @author Maria Bellido Rueda
+ * @version 1.0
  */
 public class E2 {
 
@@ -19,30 +21,32 @@ public class E2 {
     public static void main(String[] args) {
         // TODO code application logic here
         
-            int numUno , numDos, resultado ;
+    //Clase Scanner para recoger datos de entrada por teclado
+        Scanner teclado = new Scanner (System.in) ;
+
+    //Declaración de variables
+        int numUno , numDos, resultado ;
     
-    Scanner teclado = new Scanner (System.in) ;
+    //Salida en consola   
+
+        System.out.println("Introduzca el primer número con el que operar:");
+            numUno = teclado.nextInt();
     
-    System.out.println("Introduzca el primer número con el que operar:");
-        numUno = teclado.nextInt();
+        System.out.println("Introduzca el segundo número con el que operar:");
+            numDos = teclado.nextInt();
+            
+    //Operaciones aritméticas y salida de datos
     
-    System.out.println("Introduzca el segundo número con el que operar:");
-        numDos = teclado.nextInt();
-    
-    resultado = (numUno + numDos) ;
-    
+    resultado = (numUno + numDos) ;    
         System.out.println("La suma de los dos números es " + resultado);
     
-    resultado = (numUno - numDos) ;
-    
+    resultado = (numUno - numDos) ;    
         System.out.println("La resta de los dos números es " + resultado);
         
-    resultado = (numUno * numDos) ;
-    
+    resultado = (numUno * numDos) ;    
         System.out.println("La multiplicación de los dos números es " + resultado);
     
-    resultado = (numUno / numDos) ;
-    
+    resultado = (numUno / numDos) ;    
         System.out.println("La división de los dos números es " + resultado);
 
 
